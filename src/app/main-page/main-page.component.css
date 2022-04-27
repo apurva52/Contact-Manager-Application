@@ -1,0 +1,12 @@
+.clr-theme{
+    color: #b7c9cc !important;
+}
+.clr-theme:hover{
+    color:#fff;
+}
+.para{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+}
