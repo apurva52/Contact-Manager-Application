@@ -1,0 +1,114 @@
+{
+  "contacts": [
+    {
+      "groupId": "3",
+      "name": "Apurva Kumar sahu",
+      "email": "apurvakumar52@gmail.com",
+      "mobile": 7979900385,
+      "photo": "https://media-exp1.licdn.com/dms/image/C4E03AQHhT_optVvYiA/profile-displayphoto-shrink_200_200/0/1597666518933?e=1652918400&v=beta&t=-1CTsL4U4De7W_GknrM98qMwMZ85Vz4UwEQ2NVj2Djc",
+      "company": "gvbhjn",
+      "title": "gvbhjn",
+      "createdTime": 1650110245051,
+      "id": "JWjMvS8"
+    },
+    {
+      "groupId": "3",
+      "name": "prtit kumri",
+      "photo": "https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/03/16/1023122-rainacommentary.jpg",
+      "email": "apurvakumar52@gmail.com",
+      "mobile": 7979900385,
+      "company": "youtube",
+      "title": "wde",
+      "createdTime": 1650110431693,
+      "id": "cNpOa1N"
+    },
+    {
+      "groupId": "3",
+      "name": "edvdhj",
+      "photo": "https://resize.indiatvnews.com/en/resize/gallery/835_-/2021/11/2e0ca728-4c17-4cd0-ac7c-901ab8d8d08a-1636625119.jpg",
+      "email": "dwbhdksddks#@dld.com",
+      "mobile": 3323478343434,
+      "company": "ddsjdj",
+      "title": "de",
+      "createdTime": 1650520791985,
+      "id": "ZExKZfg"
+    },
+    {
+      "groupId": "1",
+      "name": "shivaji",
+      "photo": "https://media-exp1.licdn.com/dms/image/C4E03AQHhT_optVvYiA/profile-displayphoto-shrink_200_200/0/1597666518933?e=1652918400&v=beta&t=-1CTsL4U4De7W_GknrM98qMwMZ85Vz4UwEQ2NVj2Djc",
+      "email": "shivaji@gsg.com",
+      "mobile": 7393635393,
+      "company": "youtube",
+      "title": "yuber",
+      "createdTime": 1650947870870,
+      "id": "tFZGaac"
+    },
+    {
+      "groupId": "3",
+      "name": "ram shyam",
+      "photo": "https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/03/16/1023122-rainacommentary.jpg",
+      "email": "ranm@ye.com",
+      "mobile": 38937823378,
+      "company": "ddsjdj",
+      "title": "timer",
+      "createdTime": 1650947895345,
+      "id": "Ici2Mp3"
+    },
+    {
+      "groupId": "4",
+      "name": "eteueeu",
+      "photo": "https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/03/16/1023122-rainacommentary.jpg",
+      "email": "eteue@.com",
+      "mobile": 79799003833,
+      "company": "cavisson",
+      "title": "timner",
+      "createdTime": 1650947924795,
+      "id": "D-9yXEZ"
+    },
+    {
+      "groupId": "5",
+      "name": "rimi",
+      "photo": "https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/03/16/1023122-rainacommentary.jpg",
+      "email": "rimi@223.com",
+      "mobile": 7979440385,
+      "company": "svret",
+      "title": "riva",
+      "createdTime": 1650947958259,
+      "id": "6RtAK_b"
+    },
+    {
+      "groupId": "5",
+      "name": "rivank",
+      "photo": "https://resize.indiatvnews.com/en/resize/gallery/835_-/2021/11/2e0ca728-4c17-4cd0-ac7c-901ab8d8d08a-1636625119.jpg",
+      "email": "rivank@33.com",
+      "mobile": 3498487309348,
+      "company": "svretwee",
+      "title": "titoio",
+      "createdTime": 1650947990759,
+      "id": "0IWSi6j"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Collague"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Friend"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Social"
+    }
+  ]
+}
