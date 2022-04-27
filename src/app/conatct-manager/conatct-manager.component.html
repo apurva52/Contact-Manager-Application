@@ -1,0 +1,64 @@
+<div class="container mt6">
+    <div class="row">
+        <div class="col">
+            <p class="h3">Angular Contact App
+            <a class="btn btn-success btn-sm" matTooltip="Click Here To Add New Profile" href="/contacts/add"><i class="pi pi-plus"></i>&nbsp;&nbsp;Add New</a>
+            </p>
+            <p class="first-italic mt-1" style="font-size: 18px;">Anorexia is a response to cultural images of the female body - waiflike,
+                angular - that both capitulates to the ideal and also mocks it, strips away all the ancillary signs of
+                sexuality, strips away breasts and hips and butt and leaves in their place a garish caricature, a cruel
+                cartoon of flesh and bone.</p>
+            <form>
+                <div class="p-grid p-justify-center">
+                    <div class="p-col-6">
+                   <span class="p-input-icon-right">
+                    <i class="pi pi-search" ></i>
+                    <input type="text"  [(ngModel)]="search"  name="sr"  pInputText (keyup)="keyup()"  class="inp-search" placeholder="Search">         
+                </span>
+                    </div>
+               
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div *ngIf="!loading && errorMessage">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="h4 text-danger fw-bold">
+                    {{errorMessage}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<app-spinner [loader]="loading"></app-spinner>
+<!--Card Design-->
+<div class="row-size mt-4" *ngIf="!loading && contacts.length >0">
+    <div class="p-grid p-col-12 p-offset-1 sub-block">
+        <div class="col-md-6" *ngFor="let contact of contacts">
+            <div class="card list-group-item-success shadow-lg my-2">
+                <div class="card-body">
+                    <div class="row align-item-center">
+                        <div class="col-sm-4">
+                            <img [src]="contact.photo" alt="user" class="contact-img">
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="list-group">
+                                <li class="list-group-item">Name <span class="fw-bold">{{contact.name}}</span></li>
+                                <li class="list-group-item">Email <span class="fw-bold">{{contact.email}}</span></li>
+                                <li class="list-group-item">Mobile <span class="fw-bold">{{contact.mobile}}</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-1 d-flex flex-column p-justify-center align-item-center">
+                            <a routerLink="/contacts/view/{{contact.id}}"  matTooltip="Click Here To View The Profile" tooltipPosition="top" class="btn btn-warning my-1"><i class="fa fa-eye "></i></a>
+                            <a routerLink="/contacts/edit/{{contact.id}}" matTooltip="Click Here To Modify The Profile" class="btn btn-success my-1"><i class="fa fa-pencil "></i></a>
+                            <a  (click)="deleteContact(contact.id)" matTooltip="Click Here To Delete The Profile"  class="btn btn-danger my-1"><i class="fa fa-trash "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
