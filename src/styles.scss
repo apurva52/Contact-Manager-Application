@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+
+.p-overlaypanel .p-overlaypanel-content {
+    padding: 0;
+} 
+// @import "ag-grid-community/dist/styles/ag-grid.css";
+// @import "ag-grid-community/dist/styles/ag-theme-alpine.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+body{
+    font-family: 'Fredoka',sans-serif;
+    background-color: #cce7e8;
+}
+
+.contact-img{
+    width: 100px;
+    border-radius: 50%;
+}
+.fw-bold{
+    font-weight: bold;
+}
+.ms-2{
+    margin-left: 7.25px;
+}
+.contact-img-details{
+    width: 200px;
+    border-radius: 50%;
+}
+.align-item-center{
+    align-items: center;
+}
+.mt6{
+    margin-top: 6rem;
+}
+input{
+    caret-color: red;
+}
+.p-overlaypanel .p-overlaypanel-content {
+    padding: 0rem !important;
+}
+.p-toast{
+    width: 15rem !important;
+    z-index: 999999 !important;
+    opacity: 2.2 !important;
+}
+.p-toast .p-toast-message.p-toast-message-success {
+    background: #64bb67 !important;
+    /* border: solid #439446; */
+    border-width: 0 0 0 6px;
+    color: #212121;
+    border: 0 none;
+    height: 64px;
+    border: 0 none !important
+}
+.p-toast .p-toast-message .p-toast-message-content {
+    border-width: 0 0 0 6px;
+}
+.p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+    margin: -10px 0 0 1rem !important
+}
+.p-toast .p-toast-message .p-toast-message-content .p-toast-message-icon {
+    font-size: 24px !important;
+}
+.p-toast .p-toast-message .p-toast-message-content .p-toast-detail {
+    margin: 0.1rem 0 0 0 !important
+}
+.mat-toolbar{
+    background: #32395e !important;
+    color: #fff !important;
+}
