@@ -1,0 +1,200 @@
+.navbar {
+    display: block;
+    box-shadow: 0 3px 3px -2px rgb(0 0 0 / 20%), 0 3px 4px 0 rgb(0 0 0 / 14%), 0 1px 8px 0 rgb(0 0 0 / 12%);
+    /* background-color: #005f87 !important; */
+    background-color: #39424e !important;
+    padding: 3px 0px 0px 0px;
+}
+
+.button {
+    color: #fff !important;
+    border: 1px solid #ff3f6c;
+    color: #1fe8b6;
+    padding: 0px 34px;
+    border: 0px solid greenyellow;
+    border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+    font-size: 1.1rem;
+    text-decoration: none;
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: monospace;
+    transform: translate(40%, 20%);
+}
+
+.button::before,
+.button::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    text-decoration: none;
+    transition: all .5s ease-in;
+}
+
+.button::before {
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.button::after {
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+.button:hover::before,
+.button:hover::after {
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+
+.p-toast-bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.login-cred {
+    border: 1px solid #ccc !important;
+    padding: 0.25rem 0.55rem;
+    height: calc(2.75em + -0.65rem + -2px) !important;
+    border-radius: 3px;
+    line-height: 1.5;
+    background-color: var(--background_color_1);
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+h5 {
+    display: inline-block;
+    margin: 8px;
+    /* color: #fff; */
+    /* color: #b7c9cc; */
+    font-size: 21px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.chschme {
+    /* color: white; */
+    color: #b7c9cc;
+    cursor: pointer;
+}
+
+:host>>>.p-overlaypanel .p-overlaypanel-content {
+    padding: 0rem;
+}
+
+li {
+    cursor: pointer;
+}
+
+ul :hover {
+
+    background-color: #f8f9fa;
+    color: black;
+
+}
+
+.mtr {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+
+}
+
+:host>>>.p-overlay .p-overlaypanel {
+    top: 46px !important;
+    left: 1138.84px !important;
+}
+
+:host>>>.panel {
+    top: 46px !important;
+    left: 1138.84px !important;
+}
+
+.desktop-contentInfo {
+    display: block;
+    padding-bottom: 17px;
+}
+
+.desktop-infoTitle {
+    font-size: 14px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 10px;
+    font-weight: 500;
+    height: 20px;
+}
+
+.desktop-infoEmail {
+    font-size: 14px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 10px;
+    height: 14px;
+}
+
+.btn-effect {
+    font-size: 16px;
+    color: #ff3f6c;
+    font-weight: 600;
+    border: 1px solid #eaeaec;
+    border-radius: 2px;
+}
+
+.desktop-linkButton:hover {
+    border: 1px solid #ff3f6c;
+}
+
+
+
+.desktop-linkButton {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 10px 10px 0 0;
+    border: 1px solid #eaeaec;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ff3f6c;
+    font-weight: 600;
+    margin: 0 5px 6px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.li-br-top {
+    border-top: 1px solid #eaeaec;
+}
+.mat-icn{
+    font-size: 22px;
+    color: #b7c9cc;
+    height: 21px !important;
+    width: 40px !important;
+}
+.main-page{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+}
+
+.i-tag{
+   
+    font-size: 18px;
+}
+.mat-icn:hover{
+    color:#fff
+}
+.chschme:hover{
+    color:#fff;
+}
