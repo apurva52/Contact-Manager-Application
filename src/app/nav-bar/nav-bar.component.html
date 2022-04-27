@@ -1,0 +1,102 @@
+<nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-sm">
+    <div class="p-grid p-justify-between p-align-center pl-5 pr-5" style="margin-top: 1px;">
+        <div class="p-col-12">
+            <div class="p-grid p-align-center">
+                <div class="p-col navbar-brand">
+                <a routerLink="/" class="main-page">
+                    <i class="fa fa-address-card" aria-hidden="true" ></i>&nbsp;
+                    <!-- <img src ="https://1xqdqy285sk7212bfiejcprr-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/content-management-system-2-1080x675.png" class="contact-img">   -->
+                    Contact Manager Application
+                </a>
+                </div>
+                <ng-container *ngIf="loginName !== ''">
+                    <mat-icon fontSet='pi' fontIcon='pi-bell' title='Close'  style="cursor:pointer;" class='mat-icn'></mat-icon>
+                    <!-- <button type="button" icon="pi pi-user"
+                        class="p-button-rounded p-button-info p-button p-component p-button-icon-only"><span
+                            class="p-button-icon pi pi-user" aria-hidden="true"></span><span aria-hidden="true"
+                            class="p-button-label">&nbsp;</span></button> -->
+                           <div (click)="oq.toggle($event)" class="chschme">
+                            <i class="pi pi-user i-tag"></i>
+                    <h5>Guest</h5>
+                    <i (click)="oq.toggle($event)" class="fa fa-caret-down"></i>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="loginName == ''">
+                    <div style="margin-top: -6px;margin-right: 1.5rem;" *ngIf="loginName == ''"
+                        class="p-col p-grid p-jc-end p-col-nogutter p-align-center">
+
+                        <a type="submit" (mouseenter)="op.toggle($event)" label="Login" class="button">Login
+                        </a>
+                    </div>
+
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+
+
+</nav>
+
+<!-- <input type="submit"    (click)="op.toggle($event)" value="Login" class="btn btn-outline-dark" >  &nbsp; -->
+<p-overlayPanel [dismissable]="true" #op appendTo="body" [style]="{width:'270px'}" [baseZIndex]="10000000">
+    <ng-template pTemplate>
+        <div class="p-grid p-col-12 mtr">
+            <div class="desktop-contentInfo" data-reactid="846">
+                <div class="desktop-infoTitle" data-reactid="847">Welcome</div>
+                <div class="desktop-infoEmail" data-reactid="848">To access account and manage contacts</div>
+            </div>
+            <!-- <h4 style="margin: 0;">User ID</h4> -->
+            <div class="p-grid p-col-12 p-justify-center">
+                <!-- <input type="text" pInputText [(ngModel)]="userid" /> -->
+                <input type="text" [(ngModel)]="userid" class="w-100-p input-lg login-cred" pInputText
+                    placeholder="Username">
+               
+            </div>
+
+            <!-- <h4 style="margin: 0;">Password</h4> -->
+            <div class="p-grid p-col-12 p-justify-center">
+                <input type="password" #username [(ngModel)]="password" class="w-100-p input-lg login-cred" pInputText
+                    placeholder="Password">
+                </div>
+                
+            <div  *ngIf="error?.main" class="p-grid p-col-12 p-justify-center">
+            <span style="margin: 0;color: red;">{{error.main}}</span>
+            </div>
+                <div *ngIf="error?.password" class="p-grid p-col-12 p-justify-center">
+                <span style="margin: 0;color: red;" >{{error.password}}</span>
+  
+            </div>
+            <div  *ngIf="error?.userid" class="p-grid p-col-12 p-justify-center">
+                <span style="margin: 0;color: red;">{{error.userid}}</span>
+            </div>
+        </div>
+        <div class="p-col-12" style="text-align: center;">
+            <a  data-track="login"  (click)="validateUser()" class="desktop-linkButton" data-reactid="851">Login</a>
+        </div>
+    </ng-template>
+</p-overlayPanel>
+<p-toast position="bottom-right" sticky="true"></p-toast>
+
+<p-overlayPanel styleClass="panel" [dismissable]="true" #oq appendTo="body" [style]="{width:'180px'}"
+    [baseZIndex]="10000000">
+    <ng-template pTemplate>
+        <ul class="list-group">
+            <li class="list-group-item " routerLink="contacts/admin" (click)="oq.hide()">
+                <a type="submit"><i class="fa fa-dashboard"></i>&nbsp;&nbsp;Dashboard
+                </a>
+            </li>
+            <li class="list-group-item li-br-top" (click)="logoutuser()">
+                <a type="submit"><i class="pi pi-sign-out"></i>&nbsp;&nbsp;Logout
+                </a>
+            </li>
+            
+           
+        </ul>
+
+    </ng-template>
+</p-overlayPanel>
+
+
+
+<p-toast position="bottom-right"  key="callback"></p-toast>
