@@ -1,0 +1,36 @@
+<div class="container mt6">
+    <div class="row">
+        <div class="col">
+          <p class="h3 fw-bold text-primary"><i class="fa fa-eye"></i>View Contact</p>
+          <p class="first-italic mt-1">Anorexia is a response to cultural images of the female body - waiflike,
+            angular - that both capitulates to the ideal and also mocks it, strips away all the ancillary signs of
+            sexuality, strips away breasts and hips and butt and leaves in their place a garish caricature, a cruel
+            cartoon of flesh and bone.</p>
+          </div>
+    </div></div>
+    <app-spinner [loader]="loading"></app-spinner>
+    <!--View Contact Details-->
+    <div *ngIf="!loading && isNotEmpty()" class="container">
+        <div class="row align-item-center">
+            <div class="col-sm-4">
+                <img [src]="contact.photo" class="contact-img-details" alt="user">
+                </div>
+                <div class="col-sm-6">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-success">Name: <span class="fw-bold">{{contact.name}}</span></li>
+                        <li class="list-group-item list-group-item-success">Email: <span class="fw-bold">{{contact.email}}</span></li>
+                        <li class="list-group-item list-group-item-success">Mobile: <span class="fw-bold">{{contact.mobile}}</span></li>
+                        <li class="list-group-item list-group-item-success">Company: <span class="fw-bold">{{contact.company}}</span></li>
+                        <li class="list-group-item list-group-item-success">Title: <span class="fw-bold">{{contact.title}}</span></li>
+                        <li class="list-group-item list-group-item-success">Created Time: <span class="fw-bold">{{contact.createdTime}}</span></li>
+                        <li class="list-group-item list-group-item-success">Group Name: <span class="fw-bold">{{group.name}}</span></li>
+                    </ul>
+                </div>
+                </div>
+               <div class="row mt-2" >
+                   <div class="col">
+                       <a routerLink="/contacts/admin" class="btn btn-warning"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Go Back</a>
+                   </div>
+               </div>
+                </div>
+               
